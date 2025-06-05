@@ -593,8 +593,7 @@
     "pixelwave_flux1Dev03.safetensors",
     "wan2.1_i2v_480p_14B_bf16.safetensors",
     "wan2.1_i2v_720p_14B_bf16.safetensors",
-    "wan2.1_t2v_1.3B_bf16.safetensors",
-    "wan2.1_t2v_14B_bf16.safetensors"
+    "wan2.1_t2v_1.3B_bf16.safetensors"
   ],
   "PHOTOMAKER": [
     "photomaker-v1.bin",

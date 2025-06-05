@@ -20,6 +20,12 @@ PREDEFINED_WEIGHT_SETS = {
         "ae.safetensors",
         "clip_l.safetensors",
         "t5xxl_fp8_e4m3fn.safetensors",
+    ],
+    "wan-1.3b": [
+        "wan2.1_t2v_1.3B_bf16.safetensors",
+        "wan_2.1_vae.safetensors",
+        "umt5_xxl_fp16.safetensors",
+        "clip_vision_h.safetensors",
     ]
 }
 
@@ -68,6 +74,9 @@ if __name__ == "__main__":
         print(
             "Usage: python get_weights.py <filename> [<filename> ...] or python get_weights.py <weights.txt> or python get_weights.py <workflow.json>"
         )
+        print("\nPredefined weight sets:")
+        for key in PREDEFINED_WEIGHT_SETS:
+            print(f"  - {key}")
         sys.exit(1)
     filenames = sys.argv[1:]
     main(filenames)
